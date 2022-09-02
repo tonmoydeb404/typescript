@@ -46,7 +46,7 @@ see more code examples in [explicit type.ts](./src/explicit%20type.ts) file.
 
 ## Dynamic Type
 
-when our data type is not specified we can use "any" keyword to set any type of data in our variable
+when our data type is not specified we can use `any` keyword to set any type of data in our variable
 
 ```typescript
 let x: any;
@@ -58,7 +58,7 @@ let y: any[] = [];
 
 ## Type Union
 
-when we need to store multiple type of value in a variable, we can use type union using "|" symbol.
+when we need to store multiple type of value in a variable, we can use type union using `|` symbol.
 
 ```typescript
 let union: string | number;
@@ -72,7 +72,7 @@ union = 100;
 
 ## Type Alias
 
-defining type all the time is not good for code because in larger application there are tons of type checking codes. so its hard to maintain. to fix this we can use type alias.
+defining data type all the time is not good for code because in larger application there are tons of type checking codes. so its hard to maintain. to fix this we can use type alias.
 
 ```typescript
 // our own type
