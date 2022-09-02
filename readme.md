@@ -1,6 +1,6 @@
 # Typescript
 
-typescript is a superset of javascript. this is a documentation where i am including all the stuff that i am learing in typescript. to get started with typescript, make sure that node js is installed in your machine. then type bellow code to install typescript globally in your machine.
+typescript is a superset of javascript. this is a documentation where i am including all the stuff that i am learning in typescript. to get started with typescript, make sure that node js is installed in your machine. then type bellow code to install typescript globally in your machine.
 
 ```shell
 npm install -g typescript
