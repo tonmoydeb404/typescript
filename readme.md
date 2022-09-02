@@ -15,3 +15,17 @@ tsc --init
 ```
 
 this will generate a typescript config file. as your requirements you can make changes in the config file.
+
+## Typescript Types
+
+typescript is specificly type concerned. whenever we are defining a variable with a value, typescript automaticly set the value type as the variable type.
+
+```typescript
+let userName = "tonmoydeb404";
+// we declared "userName" variable with a String type value so typescript set the "userName" variable as a String type.
+
+userName = 56;
+// this will return a error because the "userName" variable is String type
+```
+
+see more code examples in [type.ts](./src/type.ts) file.
