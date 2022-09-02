@@ -55,3 +55,17 @@ let x: any;
 let y: any[] = [];
 // we can store any type of value in this array variable. but we can't reassign it with any other data type
 ```
+
+## Type Union
+
+when we need to store multiple type of value in a variable, we can use type union using "|" symbol.
+
+```typescript
+let union: string | number;
+// now we can store string or number value
+
+union = "hello world";
+union = 100;
+
+// union = []; // error because "union" variable accept only string or number type
+```
