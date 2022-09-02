@@ -29,3 +29,17 @@ userName = 56;
 ```
 
 see more code examples in [type.ts](./src/type.ts) file.
+
+## Explicit Type
+
+if we want to define the variable type without declaring the variable value then we can use the explicit type concept.
+
+```typescript
+let str: string;
+// we defined the variable type is string
+
+str = "hello";
+// str = 400; // error because "str" variable is string type
+```
+
+see more code examples in [explicit type.ts](./src/explicit%20type.ts) file.
