@@ -69,3 +69,29 @@ union = 100;
 
 // union = []; // error because "union" variable accept only string or number type
 ```
+
+## Type Alias
+
+defining type all the time is not good for code because in larger application there are tons of type checking codes. so its hard to maintain. to fix this we can use type alias.
+
+```typescript
+// our own type
+type userType = {
+  name: string;
+  age: number;
+};
+
+// we can use our type as like we are using the typescript system types
+const myUser: userType = {
+  name: "jhon doe",
+  age: 50,
+};
+
+// even we can use those in everywhere
+const printUser = (user: userType) => {
+  console.log(`Name: ${user.name}`);
+  console.log(`Age: ${user.age}`);
+};
+```
+
+using type alias we can create our own type. we can store the common type checkings in our own type. by using that we can prevent the code repetations and maintain the code. to create our own type we need to use the `type` keyword.
