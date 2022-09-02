@@ -43,3 +43,15 @@ str = "hello";
 ```
 
 see more code examples in [explicit type.ts](./src/explicit%20type.ts) file.
+
+## Dynamic Type
+
+when our data type is not specified we can use "any" keyword to set any type of data in our variable
+
+```typescript
+let x: any;
+// we can store any type of value in this variable
+
+let y: any[] = [];
+// we can store any type of value in this array variable. but we can't reassign it with any other data type
+```
