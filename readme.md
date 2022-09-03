@@ -143,3 +143,31 @@ let studentArr: Student[] = [];
 ```
 
 see the actual code example from [class.ts](./src/class.ts) file.
+
+## Module System
+
+to make our code easier to maintain we need to use modular code system. to do this we need to configure the `tsconfig.json` file for the javascript import export support.
+
+make sure that your `target` property in `tsconfig.json` file is set to `ES6`.
+
+```json
+"target": "ES6"
+```
+
+also change your `module` property to `ES2015`
+
+```json
+"module": "ES2015"
+```
+
+now to export something just use the `export` keyword in front of your variable
+
+```typescript
+export const module = "this is modular variable";
+```
+
+importing file is not so different in typescript. just use the `import` syntax. but make sure that you are using `.js` extension instead of `.ts` extension in import file location.
+
+```typescript
+import { module } from "./module.js";
+```
