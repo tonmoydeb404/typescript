@@ -171,3 +171,65 @@ importing file is not so different in typescript. just use the `import` syntax. 
 ```typescript
 import { module } from "./module.js";
 ```
+
+## Interface In Typescript
+
+interface is a common term in OOP language. interface is like a blue print or structure of a class.
+
+```typescript
+interface user {
+  readonly name: string;
+  id: number;
+
+  login(password: string): string;
+  logout(id: number): string;
+}
+```
+
+by using interface we can specify the properties that a class should have. to use interface we need to use the `implements` keyword.
+
+```typescript
+class User implements user {
+  constructor(
+    readonly name: string,
+    public id: number,
+    private password: string
+  ) {}
+
+  // log in function
+  login(password: string): string {
+    if (password === this.password) {
+      return "logged in successfully";
+    }
+
+    return "password not matched";
+  }
+
+  //   log out function
+  logout(id: number): string {
+    if (id === this.id) {
+      return "log out successfully";
+    }
+
+    return "id not matched";
+  }
+}
+```
+
+but we can't use the `private` access modifier in interface. also we can use interface as a replacement of type alias.
+
+```typescript
+interface rectOptions {
+  width: number;
+  length: number;
+}
+
+const drawRect = (options: rectOptions) => {
+  let width = options.width;
+  let length = options.length;
+
+  console.log({ width, length });
+};
+```
+
+view full code from the [interface.ts](./src/interface.ts) file.
