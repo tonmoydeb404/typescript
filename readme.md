@@ -95,3 +95,19 @@ const printUser = (user: userType) => {
 ```
 
 using type alias we can create our own type. we can store the common type checkings in our own type. by using that we can prevent the code repetations and maintain the code. to create our own type we need to use the `type` keyword.
+
+## Function Signatures
+
+function signature is like a function blueprint. we can control the function parameters and function return also.
+
+```typescript
+let funcSignature: (user: string, age: number) => string;
+```
+
+as we can see we are defining the function parameters, types and the function return type. we can use this signature to create our actual function.
+
+```typescript
+funcSignature = (user: string, age: number) => {
+  return `${user} is ${age} years old`;
+};
+```
