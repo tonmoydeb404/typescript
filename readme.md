@@ -111,3 +111,35 @@ funcSignature = (user: string, age: number) => {
   return `${user} is ${age} years old`;
 };
 ```
+
+## Class In TypeScript
+
+as like as variable we can define the class property type.
+
+```typescript
+class Student {
+  name: string;
+  age: number;
+  roll: number;
+}
+```
+
+also we can control the property access with access modifiers.
+
+```typescript
+class Student {
+  readonly name: string; // you can't overwrite this property outside of class
+
+  private age: number; // you can't read or write this property outside of class
+
+  public roll: number; // public is default modifier. you can do whatever you want
+}
+```
+
+the great news is you can use your Class as a array children type. just like this...
+
+```typescript
+let studentArr: Student[] = [];
+```
+
+see the actual code example from [class.ts](./src/class.ts) file.
